@@ -40,3 +40,87 @@
 .read-the-docs {
   color: #888;
 }
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #242424;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 90%;
+  padding: 2rem;
+}
+
+.hero-content {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  color: #61dafb;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 400;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.react-logo {
+  width: 300px;
+  height: 300px;
+  animation: logo-spin infinite 20s linear;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-content {
+    padding-right: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .react-logo {
+    width: 200px;
+    height: 200px;
+  }
+}
